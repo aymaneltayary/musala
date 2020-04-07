@@ -1,0 +1,186 @@
+2020-04-07 00:40:31.180  INFO 12336 --- [main] com.musala.demo.MusalaDemoApplication    : Starting MusalaDemoApplication on EGCND7061ZMY with PID 12336 (C:\ws\musla\musala-demo\target\classes started by aeltayary in C:\ws\musla\musala-demo)
+2020-04-07 00:40:31.184  INFO 12336 --- [main] com.musala.demo.MusalaDemoApplication    : No active profile set, falling back to default profiles: default
+2020-04-07 00:40:32.073  INFO 12336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-07 00:40:32.157  INFO 12336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76ms. Found 2 JPA repository interfaces.
+2020-04-07 00:40:32.655  INFO 12336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-07 00:40:32.663  INFO 12336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-07 00:40:32.663  INFO 12336 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-07 00:40:32.824  INFO 12336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-07 00:40:32.825  INFO 12336 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1599 ms
+2020-04-07 00:40:32.959  INFO 12336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-07 00:40:33.742  INFO 12336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-07 00:40:33.786  INFO 12336 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-07 00:40:33.846  INFO 12336 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-07 00:40:33.978  INFO 12336 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-07 00:40:34.073  INFO 12336 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-07 00:40:34.688  INFO 12336 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-07 00:40:34.759  INFO 12336 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:40:35.319  WARN 12336 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-07 00:40:35.451  INFO 12336 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-07 00:40:35.560  INFO 12336 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:40:35.739  INFO 12336 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-07 00:40:35.755  INFO 12336 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-07 00:40:35.788  INFO 12336 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-07 00:40:36.124  INFO 12336 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-07 00:40:36.131  INFO 12336 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-07 00:40:36.136 ERROR 12336 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-04-07 00:40:36.140  INFO 12336 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:40:36.143  INFO 12336 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:40:36.145  INFO 12336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-07 00:40:36.153  INFO 12336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-07 00:40:40.025  INFO 22140 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-07 00:40:40.030  INFO 22140 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:40:40.032  INFO 22140 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:40:40.036  INFO 22140 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-07 00:40:40.043  INFO 22140 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-07 00:40:51.884  INFO 17916 --- [main] com.musala.demo.MusalaDemoApplication    : Starting MusalaDemoApplication on EGCND7061ZMY with PID 17916 (C:\ws\musla\musala-demo\target\classes started by aeltayary in C:\ws\musla\musala-demo)
+2020-04-07 00:40:51.887  INFO 17916 --- [main] com.musala.demo.MusalaDemoApplication    : No active profile set, falling back to default profiles: default
+2020-04-07 00:40:52.749  INFO 17916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-07 00:40:52.839  INFO 17916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 2 JPA repository interfaces.
+2020-04-07 00:40:53.385  INFO 17916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-07 00:40:53.393  INFO 17916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-07 00:40:53.393  INFO 17916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-07 00:40:53.573  INFO 17916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-07 00:40:53.574  INFO 17916 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1648 ms
+2020-04-07 00:40:53.725  INFO 17916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-07 00:40:54.535  INFO 17916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-07 00:40:54.589  INFO 17916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-07 00:40:54.655  INFO 17916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-07 00:40:54.801  INFO 17916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-07 00:40:54.909  INFO 17916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-04-07 00:40:55.626  INFO 17916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-07 00:40:55.724  INFO 17916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:40:56.419  WARN 17916 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-07 00:40:56.604  INFO 17916 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-07 00:40:56.742  INFO 17916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:40:56.931  INFO 17916 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-07 00:40:56.950  INFO 17916 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-07 00:40:56.988  INFO 17916 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-07 00:40:57.433  INFO 17916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-07 00:40:57.437  INFO 17916 --- [main] com.musala.demo.MusalaDemoApplication    : Started MusalaDemoApplication in 5.957 seconds (JVM running for 7.102)
+2020-04-07 00:41:06.870  INFO 17916 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-07 00:41:06.870  INFO 17916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-07 00:41:06.883  INFO 17916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-04-07 00:41:07.026 DEBUG 17916 --- [http-nio-8080-exec-2] com.musala.demo.service.GatewayService   : gateway with serial number=sn51is not found
+2020-04-07 00:41:08.019 DEBUG 17916 --- [http-nio-8080-exec-5] com.musala.demo.service.GatewayService   : gateway with serial number=sn51is not found
+2020-04-07 00:41:09.016 DEBUG 17916 --- [http-nio-8080-exec-6] com.musala.demo.service.GatewayService   : gateway with serial number=sn51is not found
+2020-04-07 00:41:15.175 DEBUG 17916 --- [http-nio-8080-exec-8] com.musala.demo.service.GatewayService   : getAllGateways has been started
+2020-04-07 00:41:15.288 DEBUG 17916 --- [http-nio-8080-exec-8] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:41:16.155 DEBUG 17916 --- [http-nio-8080-exec-9] com.musala.demo.service.GatewayService   : getAllGateways has been started
+2020-04-07 00:41:16.164 DEBUG 17916 --- [http-nio-8080-exec-9] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:20.365  INFO 12240 --- [main] c.m.demo.MusalaDemoApplicationTests      : Starting MusalaDemoApplicationTests on EGCND7061ZMY with PID 12240 (started by aeltayary in C:\ws\musla\musala-demo)
+2020-04-07 00:42:20.367  INFO 12240 --- [main] c.m.demo.MusalaDemoApplicationTests      : No active profile set, falling back to default profiles: default
+2020-04-07 00:42:21.491  INFO 12240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-07 00:42:21.609  INFO 12240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 2 JPA repository interfaces.
+2020-04-07 00:42:22.401  INFO 12240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-07 00:42:23.685  INFO 12240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-07 00:42:25.404  INFO 12240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:42:26.747  WARN 12240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-07 00:42:27.254  INFO 12240 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-07 00:42:27.851  INFO 12240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:42:28.383  INFO 12240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-07 00:42:28.425  INFO 12240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-07 00:42:28.480  INFO 12240 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-07 00:42:28.790  INFO 12240 --- [main] c.m.demo.MusalaDemoApplicationTests      : Started MusalaDemoApplicationTests in 8.814 seconds (JVM running for 10.292)
+2020-04-07 00:42:29.201 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : getAllGateways has been started
+2020-04-07 00:42:29.394 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:29.435 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:29.435 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:29.436 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:29.436 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:29.872 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:30.014 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:30.286 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:30.414 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate DB entities
+2020-04-07 00:42:30.539 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:30.675 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate DB entities
+2020-04-07 00:42:30.784 DEBUG 12240 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 00:42:30.950  INFO 12240 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:42:30.956  INFO 12240 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:42:30.959  INFO 12240 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-07 00:42:30.986  INFO 12240 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-07 00:42:45.424  INFO 17916 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-07 00:42:45.430  INFO 17916 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:42:45.434  INFO 17916 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:42:45.438  INFO 17916 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-07 00:42:45.445  INFO 17916 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-07 09:14:52.368  INFO 18012 --- [main] c.m.demo.MusalaDemoApplicationTests      : Starting MusalaDemoApplicationTests on EGCND7061ZMY with PID 18012 (started by aeltayary in C:\ws\musla\musala-demo)
+2020-04-07 09:14:52.394  INFO 18012 --- [main] c.m.demo.MusalaDemoApplicationTests      : No active profile set, falling back to default profiles: default
+2020-04-07 09:14:53.516  INFO 18012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-07 09:14:53.619  INFO 18012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 2 JPA repository interfaces.
+2020-04-07 09:14:54.436  INFO 18012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-07 09:14:55.728  INFO 18012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-07 09:14:57.317  INFO 18012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 09:14:58.582  WARN 18012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-07 09:14:59.000  INFO 18012 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-07 09:14:59.521  INFO 18012 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-07 09:14:59.984  INFO 18012 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-07 09:15:00.018  INFO 18012 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-07 09:15:00.069  INFO 18012 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-07 09:15:00.336  INFO 18012 --- [main] c.m.demo.MusalaDemoApplicationTests      : Started MusalaDemoApplicationTests in 8.4 seconds (JVM running for 9.989)
+2020-04-07 09:15:00.721 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : getAllGateways has been started
+2020-04-07 09:15:00.864 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:00.876 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:00.877 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:00.877 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:00.877 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:00.878 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : getAllGateways has been returned
+2020-04-07 09:15:01.553 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : getGatewayBySn has been started  , gateway serial=sn3
+2020-04-07 09:15:01.584 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:01.585 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : getGatewayPage has been returned
+2020-04-07 09:15:01.884 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : getGatewayBySn has been started  , gateway serial=sn3
+2020-04-07 09:15:01.889 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:01.890 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : getGatewayPage has been returned
+2020-04-07 09:15:02.031 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : addDevice has been started  , gateway serial=sn5,device= NtDeviceModel [uid=77777, creationDate=null, state=false, vendor=vendor77777]
+2020-04-07 09:15:02.163 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : addDevice has been returned
+2020-04-07 09:15:02.163 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : getGatewayBySn has been started  , gateway serial=sn5
+2020-04-07 09:15:02.169 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:02.170 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : getGatewayPage has been returned
+2020-04-07 09:15:02.324 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : saveGateway has been started  , gateway=NtGatewayModel [id=null, descriptionName=gatway_8, ipv4=122.22.12.34, serialNumber=sn8, ntDevices=[NtDeviceModel [uid=100, creationDate=null, state=false, vendor=vendor100], NtDeviceModel [uid=101, creationDate=null, state=false, vendor=vendor101], NtDeviceModel [uid=102, creationDate=null, state=false, vendor=vendor102], NtDeviceModel [uid=103, creationDate=null, state=false, vendor=vendor103], NtDeviceModel [uid=104, creationDate=null, state=false, vendor=vendor104], NtDeviceModel [uid=105, creationDate=null, state=false, vendor=vendor105], NtDeviceModel [uid=106, creationDate=null, state=false, vendor=vendor106], NtDeviceModel [uid=107, creationDate=null, state=false, vendor=vendor107], NtDeviceModel [uid=108, creationDate=null, state=false, vendor=vendor108], NtDeviceModel [uid=109, creationDate=null, state=false, vendor=vendor109], NtDeviceModel [uid=110, creationDate=null, state=false, vendor=vendor110]]]
+2020-04-07 09:15:02.324 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate DB entities
+2020-04-07 09:15:02.464 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:02.466 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : saveGateway has been returned
+2020-04-07 09:15:02.607 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : saveGateway has been started  , gateway=NtGatewayModel [id=null, descriptionName=gatway_6, ipv4=122.22.12.34, serialNumber=sn6, ntDevices=[NtDeviceModel [uid=77777, creationDate=null, state=true, vendor=vendor_7]]]
+2020-04-07 09:15:02.607 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate DB entities
+2020-04-07 09:15:02.713 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : Populate the model should be returned 
+2020-04-07 09:15:02.713 DEBUG 18012 --- [main] com.musala.demo.service.GatewayService   : saveGateway has been returned
+2020-04-07 09:15:02.876  INFO 18012 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-07 09:15:02.881  INFO 18012 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 09:15:02.885  INFO 18012 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-07 09:15:02.906  INFO 18012 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-07 09:17:01.685  INFO 24280 --- [main] com.musala.demo.MusalaDemoApplication    : Starting MusalaDemoApplication on EGCND7061ZMY with PID 24280 (C:\ws\musla\musala-demo\target\classes started by aeltayary in C:\ws\musla\musala-demo)
+2020-04-07 09:17:01.689  INFO 24280 --- [main] com.musala.demo.MusalaDemoApplication    : No active profile set, falling back to default profiles: default
+2020-04-07 09:17:02.556  INFO 24280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-07 09:17:02.628  INFO 24280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 2 JPA repository interfaces.
+2020-04-07 09:17:03.116  INFO 24280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-07 09:17:03.123  INFO 24280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-07 09:17:03.123  INFO 24280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-07 09:17:03.259  INFO 24280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-07 09:17:03.260  INFO 24280 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1524 ms
+2020-04-07 09:17:03.396  INFO 24280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-07 09:17:04.230  INFO 24280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-07 09:17:05.251  INFO 24280 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 09:17:05.802  WARN 24280 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-07 09:17:05.988  INFO 24280 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-07 09:17:06.098  INFO 24280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-07 09:17:06.276  INFO 24280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-07 09:17:06.294  INFO 24280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-07 09:17:06.330  INFO 24280 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-07 09:17:06.710  INFO 24280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-07 09:17:06.712  INFO 24280 --- [main] com.musala.demo.MusalaDemoApplication    : Started MusalaDemoApplication in 5.379 seconds (JVM running for 6.501)
+2020-04-07 09:17:35.972  INFO 24280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
