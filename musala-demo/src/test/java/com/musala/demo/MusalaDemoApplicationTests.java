@@ -8,8 +8,15 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.event.annotation.BeforeTestClass;
 import org.springframework.test.context.jdbc.Sql;
+import org.springframework.web.client.HttpStatusCodeException;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestTemplate;
 
 import com.musala.demo.common.ErrorCode;
 import com.musala.demo.controller.GatewayController;
@@ -17,13 +24,15 @@ import com.musala.demo.model.ErrorResponseModel;
 import com.musala.demo.model.NtDeviceModel;
 import com.musala.demo.model.NtGatewayModel;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)
 @Sql({"/test-data.sql"}) 
 class MusalaDemoApplicationTests {
 
 	@Autowired
 	private GatewayController controller;
 	
+	 @LocalServerPort
+	 int randomServerPort;
 	
 	@Test
 	void contextLoads() {
@@ -72,14 +81,21 @@ class MusalaDemoApplicationTests {
 	@Test
 	@Sql({"/test-data.sql"}) 
 	public void saveGateWayMoreThanTenDevicesTest() throws Exception {
+		RestTemplate rest= new RestTemplate();
 		List<NtDeviceModel> deviceList= new ArrayList<NtDeviceModel>();
 		for(int i=100;i<111;i++) {
 		NtDeviceModel deviceModel=new NtDeviceModel(new Long(i) , null, false, "vendor"+i);
 		deviceList.add(deviceModel);
 		}
 		NtGatewayModel gatwayModel= new NtGatewayModel(null,"gatway_8","122.22.12.34","sn8",deviceList);
-		Object result=controller.AddGateway(gatwayModel);
-		assertThat(result instanceof ErrorResponseModel&& ((ErrorResponseModel) result).getErrorCode()==ErrorCode.VALIDATION_ERROR );
+		ErrorResponseModel resp;
+		try {
+			resp = rest.postForEntity("http://localhost:"+randomServerPort+"/nt/gateways", gatwayModel, ErrorResponseModel.class).getBody();
+		} catch (HttpStatusCodeException httpEx) {
+			assertThat(httpEx.getResponseBodyAsString()).contains("Max 10 devices are allowd");
+		}
+		
+		
 		
 
 	}
@@ -94,7 +110,7 @@ class MusalaDemoApplicationTests {
 	@Sql({"/test-data.sql"}) 
 	public void getGatewayBySerialTest() throws Exception {
 		NtGatewayModel result=controller.getGatewayBySerial("sn3");
-		assertThat("sn3".equals(result.getSerialNumber()));
+		assertThat(result.getSerialNumber()).isEqualTo("sn3");
 
 	}
 
@@ -108,7 +124,7 @@ class MusalaDemoApplicationTests {
 	@Sql({"/test-data.sql"}) 
 	public void getAllGatewayTest() throws Exception {
 		List<NtGatewayModel> result=controller.getAllGateway();
-		assertThat(result.size()==5);
+		assertThat(result.size()).isEqualTo(5);
 
 	}
 
@@ -125,7 +141,7 @@ class MusalaDemoApplicationTests {
 		NtDeviceModel deviceModel=new NtDeviceModel(new Long(77777) , null, false, "vendor"+77777);
 		controller.Adddevice("sn5", deviceModel);
 		NtGatewayModel result=controller.getGatewayBySerial("sn5");
-		assertThat(result.getNtDevices().size()==1);
+		assertThat(result.getNtDevices().size()).isEqualTo(1);
 
 	}
 	
@@ -142,7 +158,7 @@ class MusalaDemoApplicationTests {
 	public void deleteDeviceTest() throws Exception {
 		controller.deleteDevice(new Long(111111));
 		NtGatewayModel result=controller.getGatewayBySerial("sn3");
-		assertThat(result.getNtDevices().size()==2);
+		assertThat(result.getNtDevices().size()).isEqualTo(2);
 
 	}
 	
